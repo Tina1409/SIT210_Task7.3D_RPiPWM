@@ -18,7 +18,7 @@ try:
         time.sleep(0.5)   
              
         distance_cm = ultrasonic_sensor.distance * 100 
-        print("Distance (CM): %.2f" %distance_cm) 
+        print("Distance (in cm): %.2f" %distance_cm) 
         buzz =  1.0 - (distance_cm / 100)
         print("Buzz: %.2f" % buzz)
         
